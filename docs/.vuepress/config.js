@@ -1,11 +1,12 @@
 module.exports = {
     title: 'David Blog',
     description: 'Just playing around',
-    base: '/blog/',
+    base: '/blogg/',
     themeConfig: {
         // logo: './bbb.png',
         editLinks: true,
         docsDir: 'docs',
+        sidebarDepth: 3,
         locales: {
             '/': {
                 label: '简体中文',
@@ -46,6 +47,9 @@ module.exports = {
                         {
                             title: '项目',
                             collapsable: false,
+                            children: [
+                                'jd-fin'
+                            ]
                         }
                     ],
                     '/diary/': [
