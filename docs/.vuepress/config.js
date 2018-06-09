@@ -1,9 +1,8 @@
 module.exports = {
     title: 'David Blog',
     description: 'Just playing around',
-    base: '/blogg/',
+    base: '/blog/',
     themeConfig: {
-        // logo: './bbb.png',
         editLinks: true,
         docsDir: 'docs',
         sidebarDepth: 3,

@@ -14,6 +14,3 @@ features:
 footer: MIT Licensed | Copyright © 2018-present David Zhang
 ---
 
-123
-
-      <img v-if="data.heroImage" :src="$withBase(data.heroImage)" alt="hero">

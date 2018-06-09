@@ -42,14 +42,12 @@ export default {
     }
   },
   mounted() {
-	  console.log(this.$site.themeConfig)
     document.addEventListener('touchmove', function (e) {
         e.preventDefault()
     })
     var c = this.$refs.c,
         x = c.getContext('2d'),
 		pr = window.devicePixelRatio || 1,
-		pr = 1,
         w = window.innerWidth,
         h = window.innerHeight,
         f = 90,
@@ -101,12 +99,10 @@ export default {
 
 .bg {
 	position: relative;
-	background-color: red;
-	width: 100vw;
-	height: 100vh;
-	background-color: #fff;
-
-	bg, .home {
+	width 100vw
+	height 100vh
+	// background-color #fff
+	.home {
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -120,8 +116,11 @@ export default {
 
 		h1 {
 			text-align: center;
-			font-size: 40px;
-			font-weight 400
+			font-size: 30px;
+			font-weight: 700
+			letter-spacing 9px;
+			text-transform: uppercase;
+			font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
 		}
 
 		h3 {
@@ -151,9 +150,9 @@ export default {
 			}
 		}
 	}
-	bg. canvas {
-		width 100vw;
-		height 100vh;
+	canvas {
+		width 100%
+		height 100%
 	}
 }
 </style>
